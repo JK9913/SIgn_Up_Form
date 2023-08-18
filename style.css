@@ -85,4 +85,15 @@ img{
 .mainform {
     flex: 2;
     background-color: rgb(216, 216, 216);
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer{
+    flex: 1;
+}
+
+.form{
+    flex: 2;
+    background-color: whitesmoke;
 }
