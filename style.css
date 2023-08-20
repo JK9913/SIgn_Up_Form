@@ -139,6 +139,4 @@ form {
     gap: 10px;
 }
 
-label {
-    
-}
+/*There should be a div around each label + input to style easier*/
