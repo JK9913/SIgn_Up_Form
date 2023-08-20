@@ -2,7 +2,17 @@
     font-family: "righteous-regular-webfont";
     src: url("Fonts/righteous-regular-webfont.woff");
 }
+:root{
+    --border-top-left-radius-left: 10px;
+    --border-top-right-radius-left: 0px;
+    --border-bottom-left-radius-left: 10px;
+    --border-bottom-right-radius-left: 0px;
 
+    --border-top-left-radius-right: 0px;
+    --border-top-right-radius-right: 10px;
+    --border-bottom-left-radius-right: 0px;
+    --border-bottom-right-radius-right: 10px
+}
 p{
     margin:0;
     padding:0;
@@ -15,12 +25,14 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(26, 26, 26);
 }
 
 .mainpage {
     display: flex;
     width: 70%;
-    height: 70%;
+    height: 90%;
+    border-radius: var(--border-radius);
 }
 
 .image{
@@ -30,6 +42,10 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-left-radius:var(--border-top-left-radius-left) ;
+    border-top-right-radius: var(--border-top-right-radius-left);
+    border-bottom-left-radius: var(--border-bottom-left-radius-left);
+    border-bottom-right-radius: var(--border-bottom-rigth-radius-left);
 }
 
 .logoholder{
@@ -48,8 +64,8 @@ html, body{
 }
 
 img{
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: auto;
 }
 
 .logotextcontainer{
@@ -87,10 +103,24 @@ img{
     background-color: rgb(216, 216, 216);
     display: flex;
     flex-direction: column;
+    border-top-left-radius:var(--border-top-left-radius-right) ;
+    border-top-right-radius: var(--border-top-right-radius-right);
+    border-bottom-left-radius: var(--border-bottom-left-radius-right);
+    border-bottom-right-radius: var(--border-bottom-right-radius-right);
 }
 
 .header, .footer{
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 25%;
+}
+
+.footertext{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.2vh;
+    padding: 10%;
 }
 
 .form{
