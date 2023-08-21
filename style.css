@@ -100,7 +100,7 @@ img{
 
 .mainform {
     flex: 2;
-    background-color: rgb(216, 216, 216);
+    background-color: rgba(207, 255, 129, 0.39);
     display: flex;
     flex-direction: column;
     border-top-left-radius:var(--border-top-left-radius-right) ;
@@ -123,20 +123,61 @@ img{
     padding: 10%;
 }
 
-.form{
+.form {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     flex: 2;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.582);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    height: 100%;
+    margin-left: 9%;
+    margin-right: 9%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    padding-left: 5%;
+    margin-bottom: 0;
 }
 
 form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 10px;
+    column-gap: 80%;
+    height: 100%;
+    margin-left: 5%;
+    position: relative;
 }
 
 /*There should be a div around each label + input to style easier*/
+.labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    height: 2.3vh;
+    border-radius: 7px;
+    border-width: 1px;
+}
+
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.05rem;
+    position: absolute;
+    left: 0%;
+    top: 85%;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 2%;
+    padding-right: 10%;
+    display: flex;
+}
