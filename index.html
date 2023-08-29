@@ -31,18 +31,20 @@
                     <p>You <i>know</i> you want to!</p>
                 </div>
             </div>
-            <div class="form">
+            <div class="form" >
                 <h2 class="formheading">Enter user details!</h1>
-                <form action="#" method="get">
+                <form action="#" method="get" novalidate>
 
                         <div class="labels">
                             <label for="fname">First Name:</label>
                             <input type="text" name="fname" id="fname" required minlength="2">
+                            <span class="error_fname" aria-live="polite"></span>
                         </div>
 
                         <div class="labels">
                             <label for="lname">Last Name:</label>
                             <input type="text" name="lname" id="lname" required minlength="2">
+                            <span class="error_lname" aria-live="polite"></span>
                         </div>
 
                         <div class="labels">
@@ -54,16 +56,19 @@
                         <div class="labels">
                             <label for="phone">Phone Number:</label>
                             <input type="tel" name="phone" id="phone" required minlength="6">
+                            <span class="error_phone" aria-live="polite"></span>
                         </div>
 
                         <div class="labels">
                             <label for="pwd">Password:</label>
                             <input type="password" name="pwd" id="pwd" required minlength="8">
+                            <span class="error_pwd" aria-live="polite"></span>
                         </div>
 
                         <div class="labels">
                             <label for="pwdc">Confirm Password:</label>
                             <input type="password" name="pwdc" id="pwdc" required minlength="8">
+                            <span class="error_pwdc" aria-live="polite"></span>
                         </div>
 
                         <button type="submit">Submit!</button>
