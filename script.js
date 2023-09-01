@@ -32,23 +32,24 @@ form.addEventListener("submit", (event) => {
             showError(field, spanError);
             
 
-            // Cancel the submition as the email field is not valid
+            // Cancel the submition as the field is not valid
             event.preventDefault();
         }
         
         if (field.getAttribute("name").includes("pwd")) {
             
-            console.log(`field is ${field.getAttribute("id")}, and text is ${field.value}`)
             if(field.value) {
                 var passwordCheck = checkPasswords();
-
+                console.log(`Value of checkPasswords are ${passwordCheck}`);
                 if (!(passwordCheck)) {
-                showError(field, spanError, true);
-
-                event.preventDefault();
-                };
-            };
-        };
+                    showError(field, spanError, true);
+                    event.preventDefault();
+                } /*else {
+                    spanError.textContent = "";
+                    spanError.className = "error";
+                }*/
+            }
+        }
     });
 
 });
@@ -84,4 +85,4 @@ function checkPasswords(){
     } else {
         return true;
     }
-}
+};
